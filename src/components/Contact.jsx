@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Element } from "react-scroll";
 import "../App.css";
+import { TypeAnimation } from "react-type-animation";
 
 const Contact = () => {
   function normalPool(o) {
@@ -143,7 +144,62 @@ const Contact = () => {
 
   return (
     <Element name="contact" className="min-h-screen">
-      <div>
+      <div className="relative">
+        <div className="absolute w-[70%] h-[70%] top-[15%] left-[15%] bg-black/40 rounded-lg z-10 p-8 text-center">
+          <TypeAnimation
+            cursor={false}
+            sequence={["Contact Me", 3000, "C"]}
+            speed={50}
+            wrapper="h1"
+            repeat={Infinity}
+            style={{
+              fontSize: "2.5rem",
+              lineHeight: "3rem",
+              letterSpacing: "3px",
+              display: "inline-block",
+              fontWeight: "500",
+              marginBottom: "2rem",
+            }}
+            className="jersey"
+          />
+          <div className="grid grid-cols-2 mt-8">
+            <form className="flex flex-col gap-2 text-left w-[90%]">
+              <label htmlFor="message">Write Your Message :</label>
+              <textarea
+                type="text"
+                name="message"
+                className="bg-white/80 rounded-lg py-3 px-4 mt-2 text-black h-32"
+              />
+              <label htmlFor="email">Your Email :</label>
+              <input
+                type="text"
+                name="email"
+                className="bg-white/80 rounded-lg py-3 px-4 mt-2 text-black"
+              />
+            </form>
+            <div className="container mx-auto flex items-center justify-center p-12 bg-white/80 rounded-lg text-black font-bold">
+              <div className="flex justify-center items-center flex-col space-y-4">
+                <div className="flex items-center space-x-2">
+                  <a href="tel: +880 1920 220166">Phone: +880 1920 220166</a>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <a
+                    href="https://wa.me/+8801608107163"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WhatsApp: +8801608107163
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  Location: Dhaka, Bangladesh
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <canvas id="particle-canvas"></canvas>
       </div>
     </Element>
