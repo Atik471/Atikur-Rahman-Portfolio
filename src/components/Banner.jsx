@@ -3,8 +3,6 @@ import atikImg from "/assets/Atik.jpg";
 import { TypeAnimation } from "react-type-animation";
 import ScrollRevealWrapper from "../ScrollRevealWrapper";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-// import { BsLinkedin } from "react-icons/bs";
-// BsLinkedin
 
 const Banner = () => {
   return (

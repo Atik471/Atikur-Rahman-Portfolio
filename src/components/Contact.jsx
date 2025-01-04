@@ -182,7 +182,12 @@ const Contact = () => {
                 <div className="flex items-center space-x-2">
                   <a href="tel: +880 1920 220166">Phone: +880 1920 220166</a>
                 </div>
-
+                <a
+                  href="mailto:atiksafinmd1@google.com"
+                  
+                >
+                  Email: atiksafinmd1@google.com
+                </a>
                 <div className="flex items-center space-x-2">
                   <a
                     href="https://wa.me/+8801608107163"
