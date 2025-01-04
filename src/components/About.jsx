@@ -1,9 +1,12 @@
+import { Element } from "react-scroll";
 
 const About = () => {
     return (
-        <div>
+        <Element name="about" className="min-h-screen">
+            <div>
             About
         </div>
+        </Element>
     );
 };
 
